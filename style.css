@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: rgba(148, 87, 2, 0.875);
+    height: 100px;
+    width: 100%;
+}
+.banner{
+    margin-top: 15px;
+}
+header h1{
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+    padding: 20px;
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    
+  }
+  li {
+    float: right;
+    padding: 20px;
+    
+  }
+  li a {
+    display: block;
+    padding: 20px;
+    background-color: #dddddd00;
+    text-decoration: none;
+    color: white;
+  }
+  li a:hover{
+    color: rgb(227, 215, 82);
+  }
+footer{
+    background-color: rgba(148, 87, 2, 0.875);
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+#footerdiv{
+    color: aliceblue;
+    text-align: center;
+}
+#footerdiv h4{
+    margin-bottom: 20px;
+}
+#footerdiv a{
+    margin: 20px;
+}
+.row{
+    margin: 10px;
+    /* padding: 10px; */
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    display: flex;
+
+}
+.col{
+    border: 5px ridge rgb(214, 189, 173);
+    margin: 10px;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 5px 13px 2px;
+    width: 200px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+button{
+    background-color: rgba(148, 87, 2, 0.875);
+    color: white;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+}
+.title{
+    text-align: center;
+    margin-top: 15px;
+    background-color: rgba(148, 87, 2, 0.875);
+    color: white;
+    padding: 10px;
+}
+.col h5{
+    margin: 10px;
+    padding: 10px;
+}
+.price{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+button:hover{
+    padding: 4px;
+    box-shadow: 1px 1px 6px 1px;
+    background-color: rgb(50, 196, 77);
+    color: black;
+}
+.image:hover{
+    width: 120px;
+}
+.col:hover{
+    box-shadow: 4px 4px 12px 3px;
+}
+
+/* Your existing CSS rules */
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        float: none;
+        text-align: center;
+    }
+
+    ul {
+        float: none;
+        text-align: center;
+    }
+
+    li {
+        float: none;
+        display: inline-block;
+    }
+
+    .col {
+        width: 75%;
+        justify-content: center;
+        margin-bottom: 20px; /* Increase spacing between columns on small screens */
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .image {
+        width: 50%; /* Make images full width on small screens */
+    }
+}
+
+/* Additional styles for better mobile experience (optional) */
+body {
+    font-size: 16px;
+}
+
+/* Your existing CSS continues... */
